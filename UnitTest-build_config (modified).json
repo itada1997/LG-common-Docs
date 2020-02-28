@@ -1,0 +1,106 @@
+{
+    "tool-chain": {
+        "path": "/home/minh1nguyen/fsl-release-bsp/build-bmwwave/tmp/sysroots/x86_64-linux/usr/bin/aarch64-poky-linux/", 
+        "c_compiler": "aarch64-poky-linux-gcc", 
+        "cxx_compiler": "aarch64-poky-linux-g++"
+    }, 
+    "cxxflags": {
+        "libraries": [], 
+        "include_paths": {
+            "paths": [
+                {
+                    "path": "/include/JoyNR/common/"
+                }, 
+                {
+                    "path": "/include/Interfaces/"
+                }, 
+                {
+                    "path": "/include/ServiceLayerWrapper/"
+                }, 
+                {
+                    "path": "/src/ServiceLayerWrapper/"
+                }, 
+                {
+                    "path": "/include/Commons/"
+                }, 
+                {
+                    "path": "/include/JoyNR/rhl/"
+                },
+				{
+                    "path": "/include/JoyNR/"
+                },
+				{
+                    "path": "/build/"
+                },
+                {
+                    "path": "/include/RemoteServiceExecutor/"
+                }, 
+                {
+                    "path": "/src/RemoteServiceExecutor/"
+                }, 
+                {
+                    "path": "/src/"
+                }, 
+                {
+                    "path": "/include/Utils/"
+                },
+                {
+                    "path": "/home/minh1nguyen/fsl-release-bsp/build-bmwwave/tmp/sysroots/bmwwave-mek/usr/include/"
+                }
+            ]
+        }, 
+        "extra_flags": [
+            {
+                "flag": "-Werror-implicit-function-declaration"
+            },
+			{
+				"flag": "-std=c++14"
+			},
+            {
+                "flag": "--sysroot=/home/minh1nguyen/fsl-release-bsp/build-bmwwave/tmp/sysroots/bmwwave-mek/"
+            }
+        ], 
+        "defines": [
+            {
+                "define": "__UT_BUILD__"
+            }
+        ]
+    }, 
+    "objects": {
+        "files": [
+            {
+                "file": "/src/main.cpp"
+            }, 
+            {
+                "file": "/src/RemoteServiceExecutor/RemoteServiceTask.cpp"
+            }, 
+            {
+                "file": "/src/RemoteServiceExecutor/HornTask.cpp"
+            }, 
+            {
+                "file": "/src/RemoteServiceExecutor/LightTask.cpp"
+            }, 
+            {
+                "file": "/src/RemoteServiceExecutor/RemoteServiceTaskListener.cpp"
+            }, 
+            {
+                "file": "/src/RemoteServiceExecutor/RemoteServiceExecutor.cpp"
+            }, 
+            {
+                "file": "/src/ServiceLayerWrapper/VehicleBusConsumer.cpp"
+            }, 
+            {
+                "file": "/src/ServiceLayerWrapper/ServiceLayerWrapper.cpp"
+            }, 
+            {
+                "file": "/src/ServiceLayerWrapper/BackendManager.cpp"
+            }, 
+            {
+                "file": "/src/ServiceLayerWrapper/ConfigManager.cpp"
+            }, 
+            {
+                "file": "/src/ServiceLayerWrapper/SystemManager.cpp"
+            }
+        ]
+    }
+}
